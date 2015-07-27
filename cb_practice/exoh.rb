@@ -20,4 +20,4 @@ def ExOh(str)
 end
 
 ExOh("xooxxo")
- ExOh("x")
+ExOh("x")
