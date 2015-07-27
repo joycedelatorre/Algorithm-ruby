@@ -4,7 +4,7 @@
 
 def Palindrome(str)
   middle = str.length/2
-  palindrome_ary = str.split("")
+  palindrome_ary = str.downcase.split("")
   first_word = palindrome_ary[0..middle]
   second_word = palindrome_ary[middle...(str.length)].reverse
 
@@ -21,10 +21,19 @@ end
 # Palindrome("hello") #test-drive to return false
 
 def intermediate_palindrome(str)
-  sent = str.gsub(/(\W)?\s+/,'')
-
+  sent = str.downcase.gsub(/(\W)?\s+/,'').split("")
+  middle = sent.length/2
+  if (sent.length)%2 == 0
+    first_word = sent[0...middle]
+    second_word = sent[middle...(sent.length)].reverse
+    first_word == second_word ? true : false
+  else
+    first_word = sent[0..middle]
+    second_word = sent[middle...(str.length)].reverse
+    first_word == second_word ? true : false
+  end
 end
 
- intermediate_palindrome("A man, a plan, a canal. Panama");
-# intermediate_palindrome("race car");
-# intermediate_palindrome("never odd or even");
+intermediate_palindrome("never odd or even");
+intermediate_palindrome("A man, a plan, a canal. Panama");
+intermediate_palindrome("race car");
