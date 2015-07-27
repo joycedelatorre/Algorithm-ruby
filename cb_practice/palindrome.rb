@@ -4,13 +4,23 @@
 
 def Palindrome(str)
   middle = str.length/2
-  palindrome_ary = []
+  palindrome_ary = str.split("")
+  first_word = palindrome_ary[0..middle]
+  second_word = palindrome_ary[middle...(str.length)].reverse
 
+  if first_word == second_word
+    p true
+  else
+    p false
+  end
 end
-Palindrome("racecar");
-# Palindrome("eye");
-# Palindrome("kayak");
-# Palindrome("dad");
+Palindrome("racecar")
+Palindrome("eye")
+Palindrome("kayak")
+Palindrome("dad")
+# Palindrome("hello") #test-drive to return false
+
+
 # Palindrome("A man, a plan, a canal. Panama");
 # Palindrome("race car");
 # Palindrome("never odd or even");

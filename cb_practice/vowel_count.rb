@@ -2,7 +2,10 @@
 
  #pseudocode:
  # 1. Turn string into an array
- # 2.
+ # 2. loop through the array
+ # 3. check if the character is vowel.
+ # 4. count if the character is vowel and return it.
+
 
  def VowelCount(str)
     sen_chars = str.split("")
