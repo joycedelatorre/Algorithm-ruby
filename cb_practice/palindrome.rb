@@ -14,13 +14,17 @@ def Palindrome(str)
     p false
   end
 end
-Palindrome("racecar")
-Palindrome("eye")
-Palindrome("kayak")
-Palindrome("dad")
+# Palindrome("racecar")
+# Palindrome("eye")
+# Palindrome("kayak")
+# Palindrome("dad")
 # Palindrome("hello") #test-drive to return false
 
+def intermediate_palindrome(str)
+  sent = str.gsub(/(\W)?\s+/,'')
 
-# Palindrome("A man, a plan, a canal. Panama");
-# Palindrome("race car");
-# Palindrome("never odd or even");
+end
+
+ intermediate_palindrome("A man, a plan, a canal. Panama");
+# intermediate_palindrome("race car");
+# intermediate_palindrome("never odd or even");
