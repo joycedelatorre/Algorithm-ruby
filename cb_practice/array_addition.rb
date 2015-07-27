@@ -4,6 +4,8 @@
 # Input = 5,7,16,1,2 Output = "false"
 # Input = 3,5,-1,8,12 Output = "true"
 
+### first initial solution. This doesn't work
+
 # arr =[4, 6, 23, 10, 1, 3]
 
 # def ArrayAddition(arr)
@@ -18,6 +20,8 @@
 # end
 # ArrayAddition(arr)
 
+
+##### this solution works
 arr =[4, 6, 23, 10, 1, 3]
 
 def ArrayAddition(arr)
