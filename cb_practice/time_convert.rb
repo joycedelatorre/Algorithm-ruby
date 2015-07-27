@@ -5,7 +5,5 @@ def time_convert (num)
   hour = (num/60).to_s
   min = (num % 60).to_s
   puts hour + ":"+ min
-
-
 end
  time_convert(380)
