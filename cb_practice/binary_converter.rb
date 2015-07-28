@@ -2,43 +2,7 @@
     # Input = "100101"Output = "37"
     # Input = "011"Output = "3"
 
-
-# def BinaryConverter(str)
-#   ary_reversed_binary = str.reverse.split("")
-#   binary_container =[]
-#   binary = 0
-#   ary_reversed_binary.each_with_index do|num, index|
-#     if (index == 0)&&(num == "1")
-#       binary += 1
-#     end
-#     if (index == 1)&&(num == "1")
-#       binary = binary +=2
-#     end
-#     if (index == 2)&&(num == "1")
-#       binary = binary **2
-#     end
-#     binary_container.push(binary)
-#   end
-#   p binary_container
-
-# end
-
-# BinaryConverter("100101")
-
-
-# def pow(base, exponent)
-#   result = 1
-#   i = 1
-#   ary =[1]
-#   while i <= exponent
-#     result = result * base
-#     i += 1
-#     ary.push(result)
-#   end
-#   p ary
-
-# end
-# pow(2, str.length)
+###########  FIRST SOLUTION
 
 def BinaryConverter(str)
   reversed_binary = str.reverse.split("")
@@ -66,5 +30,25 @@ def BinaryConverter(str)
 end
 
 BinaryConverter("100101")
+
+#############  second solution
+
+def binary_converter(str)
+  reversed_binary = str.reverse.split("")
+
+  result = 0
+  reversed_binary.each_with_index do |num, index|
+    if num == "1"
+      result = result + (2 ** index)
+    end
+  end
+  p result
+end
+# binary_converter("100101")
+binary_converter("1110101")
+binary_converter("011")
+
+
+
 
 
