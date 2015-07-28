@@ -51,7 +51,18 @@ def BinaryConverter(str)
     i+=1
     ary_of_binaries.push(temp_binary)
   end
-  p ary_of_binaries
+  # p ary_of_binaries
+
+  sum_of_binaries = 0
+
+  reversed_binary.each_with_index {|num, index|
+
+    if reversed_binary[index] == "1"
+      sum_of_binaries += ary_of_binaries[index]
+    end
+  }
+
+  p sum_of_binaries
 end
 
 BinaryConverter("100101")
