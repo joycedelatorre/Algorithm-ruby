@@ -26,7 +26,8 @@ def BinaryConverter(str)
     end
   }
 
-  p sum_of_binaries
+  # p sum_of_binaries
+  sum_of_binaries
 end
 
 BinaryConverter("100101")
@@ -42,9 +43,10 @@ def binary_converter(str)
       result = result + (2 ** index)
     end
   end
-  p result
+  # p result
+  result
 end
-# binary_converter("100101")
+binary_converter("100101")
 binary_converter("1110101")
 binary_converter("011")
 
