@@ -69,11 +69,13 @@ def LetterCount(str)
   end
 
   if greatest == 1
-    return -1
+    p -1
   else
     p word_ary[temp_index]
   end
 
 end
 
-LetterCount("Today, is the greatest day ever!")
+LetterCount("Today, is the ever greatest day !")
+LetterCount("The quick brown fox jumps over the laxy dog!")
+
