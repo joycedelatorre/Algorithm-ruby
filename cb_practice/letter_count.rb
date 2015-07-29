@@ -27,6 +27,9 @@
 
 # LetterCount("Today, is the greatest day ever!")
 
+
+
+############## working solution
 def LetterCount(str)
   word_ary = str.downcase.split(" ")
   holder = []
