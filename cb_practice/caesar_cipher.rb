@@ -3,3 +3,8 @@
 
  # Input = "Hello" & num = 4Output = "Lipps"
 # Input = "abc" & num = 0Output = "abc"
+
+
+def CaesarCipher(str, num)
+end
+CaesarCipher("Hello", 4)
