@@ -80,4 +80,6 @@ end
 
 LetterCount("Today, is the ever greatest day !")
 LetterCount("The quick brown fox jumps over the laxy dog!")
+LetterCount("she sells seashells by the seashore")
+
 
