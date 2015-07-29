@@ -70,8 +70,10 @@ def LetterCount(str)
 
   if greatest == 1
     p -1
+    return -1
   else
     p word_ary[temp_index]
+    return word_ary[temp_index]
   end
 
 end
